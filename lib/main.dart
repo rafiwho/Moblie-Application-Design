@@ -38,19 +38,46 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Container(
         height: double.infinity,
         width: double.infinity,
-        child: SingleChildScrollView(
-          scrollDirection: Axis.horizontal,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: List.generate(50, (index) {
-              return Icon(
-                Icons.favorite, 
-                size: 50,
-                color: Color.fromARGB(255, 21, 0, 255),
-              );
-            }),
-          ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            // Outer Column
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  Icons.favorite,
+                  size: 50,
+                  color: Colors.pink,
+                ),
+                Icon(
+                  Icons.favorite,
+                  size: 50,
+                  color: Colors.pink,
+                ),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  Icons.favorite,
+                  size: 50,
+                  color: Colors.pink,
+                ),
+                Icon(
+                  Icons.favorite,
+                  size: 50,
+                  color: Colors.pink,
+                ),
+                Icon(
+                  Icons.favorite,
+                  size: 50,
+                  color: Colors.pink,
+                ),
+              ],
+            ),
+          ],
         ),
       ),
     );
