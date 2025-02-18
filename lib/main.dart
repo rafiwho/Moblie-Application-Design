@@ -43,37 +43,98 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Row(
-  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-  children: [
-    Icon(
-      Icons.star,
-      size: 50,
-      color: Color.fromARGB(255, 255, 0, 0), 
-    ),
-    Icon(
-      Icons.star,
-      size: 50,
-      color: Color.fromARGB(255, 255, 165, 0),
-    ),
-    Icon(
-      Icons.star,
-      size: 50,
-      color: Color.fromARGB(255, 0, 217, 25),
-    ),
-    Icon(
-      Icons.star,
-      size: 50,
-      color: Color.fromARGB(255, 0, 0, 255),
-    ),
-    Icon(
-      Icons.star,
-      size: 60,
-      color: Color.fromARGB(255, 255, 255, 0), 
-    ),
-  ],
-)
-,
+      body: Container(
+        height: double.infinity,
+        width: double.infinity,
+        child: SingleChildScrollView(
+          scrollDirection: Axis.horizontal, 
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(
+                Icons.star,
+                size: 50,
+                color: Color.fromARGB(255, 255, 0, 0),
+              ),
+              Icon(
+                Icons.star,
+                size: 50,
+                color: Color.fromARGB(255, 255, 165, 0),
+              ),
+              Icon(
+                Icons.star,
+                size: 50,
+                color: Color.fromARGB(255, 0, 217, 25),
+              ),
+              Icon(
+                Icons.star,
+                size: 50,
+                color: Color.fromARGB(255, 0, 0, 255),
+              ),
+              Icon(
+                Icons.star,
+                size: 60,
+                color: Color.fromARGB(255, 255, 255, 0),
+              ),
+               Icon(
+                Icons.star,
+                size: 60,
+                color: Color.fromARGB(255, 255, 255, 0),
+              ),
+               Icon(
+                Icons.star,
+                size: 60,
+                color: Color.fromARGB(255, 255, 255, 0),
+              ),
+               Icon(
+                Icons.star,
+                size: 60,
+                color: Color.fromARGB(255, 255, 255, 0),
+              ),
+               Icon(
+                Icons.star,
+                size: 60,
+                color: Color.fromARGB(255, 255, 255, 0),
+              ),
+               Icon(
+                Icons.star,
+                size: 60,
+                color: Color.fromARGB(255, 255, 255, 0),
+              ),
+               Icon(
+                Icons.star,
+                size: 60,
+                color: Color.fromARGB(255, 255, 255, 0),
+              ),
+               Icon(
+                Icons.star,
+                size: 60,
+                color: Color.fromARGB(255, 255, 255, 0),
+              ),
+               Icon(
+                Icons.star,
+                size: 60,
+                color: Color.fromARGB(255, 255, 255, 0),
+              ),
+               Icon(
+                Icons.star,
+                size: 60,
+                color: Color.fromARGB(255, 255, 255, 0),
+              ),
+               Icon(
+                Icons.star,
+                size: 60,
+                color: Color.fromARGB(255, 255, 255, 0),
+              ),
+               Icon(
+                Icons.star,
+                size: 60,
+                color: Color.fromARGB(255, 255, 255, 0),
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
