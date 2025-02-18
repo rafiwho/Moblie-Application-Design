@@ -48,7 +48,8 @@ class _MyHomePageState extends State<MyHomePage> {
                     style: TextStyle(fontSize: 20),
                   ),
                   Icon(
-                    Icons.favorite
+                    Icons.favorite,
+                    color:Color.fromARGB(255, 255, 0, 0),
                   )
                 ],
               ),
