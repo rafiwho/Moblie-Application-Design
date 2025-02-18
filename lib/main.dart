@@ -43,8 +43,8 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Column(
-  crossAxisAlignment: CrossAxisAlignment.center,
+      body: Row(
+  mainAxisAlignment: MainAxisAlignment.spaceAround,
   children: [
     Icon(
       Icons.star,
