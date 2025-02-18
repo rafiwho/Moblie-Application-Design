@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:iconsax/iconsax.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,12 +11,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Rating App',
+      title: 'Fancy Icon App',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Rating App'),
+      home: const MyHomePage(title: 'Rating By Heart'),
     );
   }
 }
@@ -29,14 +30,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -47,91 +40,17 @@ class _MyHomePageState extends State<MyHomePage> {
         height: double.infinity,
         width: double.infinity,
         child: SingleChildScrollView(
-          scrollDirection: Axis.horizontal, 
+          scrollDirection: Axis.horizontal,
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Icon(
-                Icons.star,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: List.generate(50, (index) {
+              return Icon(
+                Iconsax.activity, 
                 size: 50,
-                color: Color.fromARGB(255, 255, 0, 0),
-              ),
-              Icon(
-                Icons.star,
-                size: 50,
-                color: Color.fromARGB(255, 255, 165, 0),
-              ),
-              Icon(
-                Icons.star,
-                size: 50,
-                color: Color.fromARGB(255, 0, 217, 25),
-              ),
-              Icon(
-                Icons.star,
-                size: 50,
-                color: Color.fromARGB(255, 0, 0, 255),
-              ),
-              Icon(
-                Icons.star,
-                size: 60,
-                color: Color.fromARGB(255, 255, 255, 0),
-              ),
-               Icon(
-                Icons.star,
-                size: 60,
-                color: Color.fromARGB(255, 255, 255, 0),
-              ),
-               Icon(
-                Icons.star,
-                size: 60,
-                color: Color.fromARGB(255, 255, 255, 0),
-              ),
-               Icon(
-                Icons.star,
-                size: 60,
-                color: Color.fromARGB(255, 255, 255, 0),
-              ),
-               Icon(
-                Icons.star,
-                size: 60,
-                color: Color.fromARGB(255, 255, 255, 0),
-              ),
-               Icon(
-                Icons.star,
-                size: 60,
-                color: Color.fromARGB(255, 255, 255, 0),
-              ),
-               Icon(
-                Icons.star,
-                size: 60,
-                color: Color.fromARGB(255, 255, 255, 0),
-              ),
-               Icon(
-                Icons.star,
-                size: 60,
-                color: Color.fromARGB(255, 255, 255, 0),
-              ),
-               Icon(
-                Icons.star,
-                size: 60,
-                color: Color.fromARGB(255, 255, 255, 0),
-              ),
-               Icon(
-                Icons.star,
-                size: 60,
-                color: Color.fromARGB(255, 255, 255, 0),
-              ),
-               Icon(
-                Icons.star,
-                size: 60,
-                color: Color.fromARGB(255, 255, 255, 0),
-              ),
-               Icon(
-                Icons.star,
-                size: 60,
-                color: Color.fromARGB(255, 255, 255, 0),
-              ),
-            ],
+                color: Color.fromARGB(255, 21, 0, 255),
+              );
+            }),
           ),
         ),
       ),
