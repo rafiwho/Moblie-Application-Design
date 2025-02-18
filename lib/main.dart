@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Rating By Heart'),
+      home: const MyHomePage(title: 'Nested Pyramid'),
     );
   }
 }
@@ -35,45 +35,70 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Container(
-        height: double.infinity,
-        width: double.infinity,
+      body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // Outer Column
-            Row(
+            // First row (top of the pyramid)
+            Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Icon(
-                  Icons.favorite,
-                  size: 50,
-                  color: Colors.pink,
-                ),
-                Icon(
-                  Icons.favorite,
-                  size: 50,
-                  color: Colors.pink,
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Icons.favorite,
+                      size: 50,
+                      color: Colors.pink,
+                    ),
+                  ],
                 ),
               ],
             ),
-            Row(
+            // Second row (nested row inside column)
+            Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Icon(
-                  Icons.favorite,
-                  size: 50,
-                  color: Colors.pink,
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Icons.favorite,
+                      size: 50,
+                      color: Colors.pink,
+                    ),
+                    Icon(
+                      Icons.favorite,
+                      size: 50,
+                      color: Colors.pink,
+                    ),
+                  ],
                 ),
-                Icon(
-                  Icons.favorite,
-                  size: 50,
-                  color: Colors.pink,
-                ),
-                Icon(
-                  Icons.favorite,
-                  size: 50,
-                  color: Colors.pink,
+              ],
+            ),
+            // Third row (nested row inside column)
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Icons.favorite,
+                      size: 50,
+                      color: Colors.pink,
+                    ),
+                    Icon(
+                      Icons.favorite,
+                      size: 50,
+                      color: Colors.pink,
+                    ),
+                    Icon(
+                      Icons.favorite,
+                      size: 50,
+                      color: Colors.pink,
+                    ),
+                  ],
                 ),
               ],
             ),
