@@ -10,12 +10,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Rating App',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Rating App'),
     );
   }
 }
@@ -44,14 +44,36 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Row(
-        children: const [
-          Icon(
-            Icons.ac_unit,
-            size: 60,
-            color: const Color.fromARGB(255, 0, 217, 25),
-          )
-        ],
-      ),
+  mainAxisAlignment: MainAxisAlignment.center,
+  children: [
+    Icon(
+      Icons.star,
+      size: 40,
+      color: Color.fromARGB(255, 255, 0, 0), // Red
+    ),
+    Icon(
+      Icons.star,
+      size: 45,
+      color: Color.fromARGB(255, 255, 165, 0), // Orange
+    ),
+    Icon(
+      Icons.star,
+      size: 50,
+      color: Color.fromARGB(255, 0, 217, 25), // Green
+    ),
+    Icon(
+      Icons.star,
+      size: 55,
+      color: Color.fromARGB(255, 0, 0, 255), // Blue
+    ),
+    Icon(
+      Icons.star,
+      size: 60,
+      color: Color.fromARGB(255, 255, 255, 0), // Yellow
+    ),
+  ],
+)
+,
     );
   }
 }
