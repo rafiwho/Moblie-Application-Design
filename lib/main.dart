@@ -43,17 +43,17 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Row(
-  mainAxisAlignment: MainAxisAlignment.center,
+      body: Column(
+  crossAxisAlignment: CrossAxisAlignment.center,
   children: [
     Icon(
       Icons.star,
-      size: 40,
+      size: 50,
       color: Color.fromARGB(255, 255, 0, 0), 
     ),
     Icon(
       Icons.star,
-      size: 45,
+      size: 50,
       color: Color.fromARGB(255, 255, 165, 0),
     ),
     Icon(
@@ -63,7 +63,7 @@ class _MyHomePageState extends State<MyHomePage> {
     ),
     Icon(
       Icons.star,
-      size: 55,
+      size: 50,
       color: Color.fromARGB(255, 0, 0, 255),
     ),
     Icon(
