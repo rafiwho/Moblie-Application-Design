@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Nested Pyramid'),
+      home: const MyHomePage(title: 'Shoe widget'),
     );
   }
 }
@@ -36,70 +36,55 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      Icons.favorite,
-                      size: 50,
-                      color: Colors.pink,
+        child: Container(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: const [
+                  Text(
+                    '50\% OFF',
+                    style: TextStyle(fontSize: 20),
+                  ),
+                  Icon(
+                    Icons.favorite
+                  )
+                ],
+              ),
+              const SizedBox(height: 20),
+
+              Image.network(
+                'https://tinyurl.com/cse414-nike-res', 
+                height: 300,
+                width: 300,
+              ),
+              const SizedBox(height: 20),
+
+              const Text(
+                'Nike Air Shoes',
+                style: TextStyle(fontSize: 18),
+              ),
+              const SizedBox(height: 20),
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: const [
+                  Text(
+                    '\$45,000  ',
+                    style: TextStyle(fontSize: 16),
+                  ),
+                  Text(
+                    '\$55,000',
+                    style: TextStyle(
+                      fontSize: 16,
+                      decoration: TextDecoration.lineThrough,
                     ),
-                  ],
-                ),
-              ],
-            ),
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      Icons.favorite,
-                      size: 50,
-                      color: Colors.pink,
-                    ),
-                    Icon(
-                      Icons.favorite,
-                      size: 50,
-                      color: Colors.pink,
-                    ),
-                  ],
-                ),
-              ],
-            ),
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      Icons.favorite,
-                      size: 50,
-                      color: Colors.pink,
-                    ),
-                    Icon(
-                      Icons.favorite,
-                      size: 50,
-                      color: Colors.pink,
-                    ),
-                    Icon(
-                      Icons.favorite,
-                      size: 50,
-                      color: Colors.pink,
-                    ),
-                  ],
-                ),
-              ],
-            ),
-          ],
+                  ),
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     );
