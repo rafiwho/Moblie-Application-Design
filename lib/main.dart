@@ -49,27 +49,27 @@ class _MyHomePageState extends State<MyHomePage> {
     Icon(
       Icons.star,
       size: 40,
-      color: Color.fromARGB(255, 255, 0, 0), // Red
+      color: Color.fromARGB(255, 255, 0, 0), 
     ),
     Icon(
       Icons.star,
       size: 45,
-      color: Color.fromARGB(255, 255, 165, 0), // Orange
+      color: Color.fromARGB(255, 255, 165, 0),
     ),
     Icon(
       Icons.star,
       size: 50,
-      color: Color.fromARGB(255, 0, 217, 25), // Green
+      color: Color.fromARGB(255, 0, 217, 25),
     ),
     Icon(
       Icons.star,
       size: 55,
-      color: Color.fromARGB(255, 0, 0, 255), // Blue
+      color: Color.fromARGB(255, 0, 0, 255),
     ),
     Icon(
       Icons.star,
       size: 60,
-      color: Color.fromARGB(255, 255, 255, 0), // Yellow
+      color: Color.fromARGB(255, 255, 255, 0), 
     ),
   ],
 )
