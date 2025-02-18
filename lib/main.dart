@@ -44,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Row(
-  mainAxisAlignment: MainAxisAlignment.spaceAround,
+  mainAxisAlignment: MainAxisAlignment.spaceBetween,
   children: [
     Icon(
       Icons.star,
