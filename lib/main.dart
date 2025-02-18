@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
 
 void main() {
   runApp(const MyApp());
@@ -46,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: List.generate(50, (index) {
               return Icon(
-                Iconsax.activity, 
+                Icons.favorite, 
                 size: 50,
                 color: Color.fromARGB(255, 21, 0, 255),
               );
