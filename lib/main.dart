@@ -39,7 +39,6 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // First row (top of the pyramid)
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -55,7 +54,6 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ],
             ),
-            // Second row (nested row inside column)
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -76,7 +74,6 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ],
             ),
-            // Third row (nested row inside column)
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
