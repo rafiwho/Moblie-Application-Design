@@ -41,30 +41,29 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-
         title: Text(widget.title),
       ),
-      body: Center(
-
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
+      body: Row(
+        children: const [
+          Text("hi, "),
+          Text("this is "),
+          Text("flutter"),
+          Text(
+            "This is ",
+            style: TextStyle(
+              color: Colors.yellow,
+              fontSize: 50,
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
+          ),
+          Text(
+            "flutter",
+            style: TextStyle(
+              color: Colors.blue,
+              fontSize: 20,
             ),
-          ],
-        ),
+          ),
+        ],
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
