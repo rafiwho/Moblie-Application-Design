@@ -45,23 +45,11 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Row(
         children: const [
-          Text("hi, "),
-          Text("this is "),
-          Text("flutter"),
-          Text(
-            "This is ",
-            style: TextStyle(
-              color: Colors.yellow,
-              fontSize: 50,
-            ),
-          ),
-          Text(
-            "flutter",
-            style: TextStyle(
-              color: Colors.blue,
-              fontSize: 20,
-            ),
-          ),
+          Icon(
+            Icons.ac_unit,
+            size: 60,
+            color: const Color.fromARGB(255, 0, 217, 25),
+          )
         ],
       ),
     );
